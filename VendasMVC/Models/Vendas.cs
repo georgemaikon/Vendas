@@ -15,12 +15,13 @@ namespace VendasMVC.Models
         {
         }
 
-        public Vendas(int id, DateTime data, double valor, StatusVenda status)
+        public Vendas(int id, DateTime data, double valor, StatusVenda status, Vendedor vendedor)
         {
             Id = id;
             Data = data;
             Valor = valor;
             Status = status;
+            Vendedor = vendedor;    
         }
     }
 }
